@@ -6,13 +6,13 @@ namespace TemeC
     {
         public static void Main(String[] args)
         {
-            Calculator(args);
-            SumFirst100();
-            IsPolindrom();
+            calculator(args);
+            sumFirst100();
+            isPolindrom();
             printPrime(20);
         }
 
-        public static void Calculator(String[] args)
+        public static void calculator(String[] args)
         {
             if (args.Length == 3)
             {
@@ -52,7 +52,7 @@ namespace TemeC
             }
         }
 
-        public static void SumFirst100()
+        public static void sumFirst100()
         {
             int sum = 0;
             for (int i = 1; i <= 100; i++)
@@ -62,7 +62,7 @@ namespace TemeC
             Console.WriteLine("Suma primelor 100 numere este: " + sum);
         }
 
-        public static void IsPolindrom()
+        public static void isPolindrom()
         {
             int num, temp, reversenum = 0, originalnum;
             Console.Write("Introduceti un numar: ");
